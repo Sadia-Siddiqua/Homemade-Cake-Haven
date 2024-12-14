@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cake Decoration Games</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: 'Open Sans', sans-serif;
+            background-color: #f4e1d2; /* Light beige */
+            color: #000000; /* Black */
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            font-family: 'Dancing Script', cursive;
+            background-color: #d7b49e; /* Dark beige */
+            color: #000000; /* Black text */
+            text-align: center;
+            padding: 1em 0;
+            font-size: 2.5em;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+            gap: 2em;
+            list-style-type: none;
+            padding: 1em 0;
+            margin: 0;
+            background-color: #c6a189; /* Soft beige */
+        }
+
+        nav a {
+            font-family: 'Dancing Script', cursive;
+            text-decoration: none;
+            color: #000000; /* Black links */
+            font-weight: bold;
+            font-size: 1.2em;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #4E342E; /* Dark brown */
+        }
+
+        h2 {
+            font-family: 'Dancing Script', cursive;
+            color: #000000; /* Black */
+            text-align: center;
+            font-size: 2em;
+        }
+
+        .gallery img {
+            margin: 10px;
+            border-radius: 10px;
+            transition: transform 0.3s ease;
+            width: 150px;
+            height: 150px;
+        }
+
+        .gallery img:hover {
+            transform: scale(1.1);
+        }
+
+        .recipes {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            font-family: 'Open Sans', sans-serif;
+            font-size: 1.2em;
+            background-color: #e8d4c1;
+            color: #000000;
+            padding: 1em;
+            border-radius: 10px;
+            width: 90%;
+            margin: 0 auto;
+        }
+
+        .recipe-content {
+            width: 100%;
+            text-align: center;
+            margin-bottom: 1em;
+        }
+
+        .recipe-video {
+            width: 100%;
+            text-align: center;
+        }
+
+        .recipe-video video {
+            width: 100%;
+            max-width: 200px; /* Smaller video for PC */
+            border-radius: 10px;
+        }
+
+        button {
+            font-family: 'Dancing Script', cursive;
+            background-color: #c6a189;
+            color: #000000;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 1.2em;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #d7b49e;
+            transform: scale(1.1);
+        }
+
+        form {
+            text-align: center;
+            background-color: #e8d4c1;
+            padding: 1em;
+            border-radius: 10px;
+            width: 90%;
+            max-width: 400px;
+            margin: 0 auto;
+        }
+
+        form input, form textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #c6a189;
+            border-radius: 5px;
+            background-color: #f4e1d2;
+            color: #000000;
+        }
+
+        footer {
+            font-family: 'Dancing Script', cursive;
+            text-align: center;
+            padding: 1em;
+            background-color: #d7b49e;
+            color: #000000;
+        }
+
+        footer a {
+            color: #000000;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            color: #4E342E;
+        }
+
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+                gap: 1em;
+            }
+
+            .recipes {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .recipe-content, .recipe-video {
+                width: 100%;
+            }
+
+            .recipe-video video {
+                width: 100%;
+                max-width: 150px; /* Smaller video for mobile */
+            }
+
+            .gallery img {
+                width: 100px;
+                height: 100px;
+            }
+
+            header img {
+                max-height: 200px;
+            }
+
+            .social-links {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 1em;
+            }
+
+            .social-links video {
+                width: 100%;
+                max-width: 150px; /* Smaller video for mobile */
+            }
+
+            .video-container video {
+                width: 100%;
+                max-width: 150px; /* Smaller video for mobile */
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Cake Decoration Fun Zone 🎂</h1>
+    </header>
+    <main>
+        <nav>
+            <ul>
+                <li><a href="#gallery">Cake Gallery</a></li>
+                <li><a href="#recipes">Delicious Cake Recipes</a></li>
+                <li><a href="#testimonials">What People Are Saying</a></li>
+                <li><a href="#quiz">Fun Cake Quiz</a></li>
+                <li><a href="#social-media">Follow Us</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+        </nav>
+        <section id="gallery">
+            <h2>Cake Gallery</h2>
+            <div class="gallery">
+                <img src="6.jpeg" alt="Cake 1">
+                <img src="7.jpeg" alt="Cake 2">
+                <img src="9.jpeg" alt="Cake 3">
+            </div>
+        </section>
+
+        <section id="video">
+            <h2>Cake Decorating Video</h2>
+            <div class="video-container">
+                <video controls>
+                    <source src="13.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </section>
+
+        <section id="recipes">
+            <h2>Delicious Cake Recipes</h2>
+            <div class="recipes">
+                <div class="recipe-content">
+                    <h3>Chocolate Cake 🍰</h3>
+                    <ul>
+                        <li>1 cup flour</li>
+                        <li>1 cup sugar</li>
+                        <li>1/2 cup cocoa powder</li>
+                        <li>1 tsp baking powder</li>
+                        <li>1/2 tsp salt</li>
+                        <li>1 cup milk</li>
+                        <li>1/2 cup vegetable oil</li>
+                    </ul>
+                    <p>Mix all ingredients and bake at 350°F (175°C) for 30 minutes. Enjoy! 🥳</p>
+                </div>
+                <div class="recipe-video">
+                    <video controls>
+                        <source src="14.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+            </div>
+        </section>
+
+        <section id="testimonials">
+            <h2>What People Are Saying</h2>
+            <p>Here’s what our visitors have to say about their cake decorating experience:</p>
+            <ul>
+              <li>"This site inspired me to bake my first cake!" - Jane</li>
+              <li>"Absolutely loved the tutorials. So easy to follow!" - Alex</li>
+              <li>"The cake gallery is stunning and gave me so many ideas!" - Mia</li>
+            </ul>
+          </section>
+
+          <section id="quiz">
+            <h2>Fun Cake Quiz</h2>
+            <p>Test your knowledge about cake decorating! Are you ready for the challenge?</p>
+            <button onclick="startQuiz()">Start Quiz</button>
+          </section>
+          
+
+        <section id="social-media">
+            <h2>Follow Us</h2>
+                <video controls>
+                    <source src="15.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <form>
+                <label for="name">Name:</label><br>
+                <input type="text" id="name" name="name"><br>
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email"><br>
+                <label for="message">Message:</label><br>
+                <textarea id="message" name="message"></textarea><br>
+                <button type="submit">Send</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Cake Decoration Fun Zone. All rights reserved. | Designed with ❤️</p>
+        <p>Follow us on <a href="https://www.instagram.com/handmadecake12/profilecard/?igsh=MWxkODN1MDVkdGl3Yw==">Instagram</a>.</p>
+    </footer>
+</body>
+</html>
